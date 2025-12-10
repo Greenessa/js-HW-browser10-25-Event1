@@ -3,7 +3,7 @@ import createTaskList from "./createTaskList";
 import saveInStorage from "./saveInStorage";
 
 // comment this to pass build
-const unusedVariable = "variable";
+// const unusedVariable = "variable";
 
 // for demonstration purpose only
 export default function demo(value) {
