@@ -12,14 +12,8 @@ export default function demo(value) {
 
 console.log("app.js included");
 
-
-
 const save = new saveInStorage(localStorage);
 
 let taskList = new createTaskList(save);
 
 taskList.loadTaskList();
-
-
-
-
