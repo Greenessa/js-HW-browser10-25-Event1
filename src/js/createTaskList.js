@@ -159,7 +159,7 @@ export default class createTaskList {
     if (selectedEl.classList.contains("round-checkbox")) {
       let task = selectedEl.previousElementSibling.textContent;
       this.taskListState.arrayTask.push(task);
-      this.addTasks(this.arrayTask);
+      this.addTasks(this.taskListState.arrayTask);
       let index = this.taskListState.arrayPinnedTask.indexOf(task);
       this.taskListState.arrayPinnedTask.splice(index, 1);
       this.addPinnedTasks(this.taskListState.arrayPinnedTask);
