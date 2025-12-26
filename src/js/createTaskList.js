@@ -24,7 +24,7 @@ export default class createTaskList {
     // console.log(obj);
     this.taskListState = TaskListState.from(obj);
     console.log("Загруженный список задач", this.taskListState);
-    if (this.taskListState != null) {
+    if (this.taskListState.arrayTask || this.taskListState.arrayPinnedTask) {
       this.addTasks(this.taskListState.arrayTask);
       this.addPinnedTasks(this.taskListState.arrayPinnedTask);
     }
